@@ -1,0 +1,461 @@
+
+/****Global style****/
+
+html, body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: rgb(39, 34, 36);
+    background-color: #FAEDE6;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3{
+    margin: 0;
+    font-weight: 500;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    text-align: center;
+    color: #214061;
+}
+
+h1{
+    padding: 2rem 0;
+}
+
+h4{
+    margin: 0;
+    font-family: 'Big Shoulders Stencil Display', Arial;
+}
+
+.hero {
+    height: 600px;
+    margin: 0;
+    padding: 100px;
+    font-family: 'Open Sans', sans-serif;
+    color: #000;
+    background-repeat: repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('./img/tech.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.hero h1{
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    color: white;
+    font-size: 48pt;
+    font-weight: 900;
+    font-family: 'Playfair Display', sans-serif;
+    text-align: left;
+    background-image: linear-gradient(120deg, #FFBA9E 0%, #214061 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 0.2em;
+    background-position: 0 100%;
+    transition: background-size 0.25s ease-in;
+    position: relative;
+    animation: moving-h1 3s ease 1;
+}
+
+@keyframes moving-h1 {
+    from {left: 500px;}
+    to {left: 0px;}
+}
+
+@keyframes moving {
+    from {right: 300px;}
+    to {right: 0px;}
+}
+
+@keyframes grow {
+    from {height: 1rem;}
+    to {height: 15rem;}
+}
+
+.hero nav{
+    width: 30rem;
+    font-size: 14pt;
+    position: relative;
+    grid-row-start: 3;
+    grid-column-start: 3;
+    animation: moving 3s ease 1;
+}
+
+section li{
+    list-style-type: circle;
+}
+
+button{
+    width: 63%;
+    height: 2rem;
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 1rem;
+    background-color: #FFBA9E;
+    color:rgb(33, 64, 97);
+    border: none;
+    cursor: pointer;
+}
+
+.hero ul{
+    margin:0;
+    padding: 1rem 0;
+    width: 63%;
+    background-color: rgba(33, 64, 97, 0.5);
+    transition: 1s ease;
+}
+
+.hero ul.hidden-menu{
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(-90deg);
+}
+
+.hero ul.active{
+    transform-origin: top;
+    transform: perspective(1000px) rotateX(0deg);
+}
+
+.hero ul li{
+    list-style-type: none;
+    padding: 0.5rem 0;
+}
+
+ .hero ul a{
+    margin: 2rem;
+    text-decoration: none;
+    color: white; 
+    font-family: "Roboto";
+    font-weight: 900;
+    font-size: 1.3rem;
+    line-height: 0.5rem;
+    transition: all 500ms ease;
+}
+
+.hero ul a:hover{
+    color: #FFBA9E;
+    font-size: 1.4rem;
+}
+
+
+/****Hero section****/
+
+
+.hero .profilepic{
+    grid-row-start: 3;
+    grid-column-start: 1;
+    justify-self: center;
+    align-self: center;
+    z-index: 10;
+}
+
+.hero img{
+    height: 15rem;
+    position: relative;
+    animation: grow 3s ease 1;
+}
+
+
+/****About Me section style****/
+
+#aboutme{
+    padding: 5rem 0;
+    font-family: Roboto;
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#aboutme p{
+    width: 50%;
+    line-height: 2.12rem;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+}
+
+
+/****Professional ¬ Technical Knowledge sections style****/
+
+#professional, #techknow{
+    height: auto;
+    width: 100%;
+    padding: 2rem 0;
+    font-family: Roboto;
+    background-color: #214061;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+
+
+#professional h4{
+    margin-left: 45%;
+    padding-top: 1rem;
+    color: #FAEDE6;
+}
+
+#professional div{
+    margin: 0 25%;
+    padding-bottom: 2rem;
+    border-top: 3px solid #bbb;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+
+
+/****Education section style****/
+
+#education{
+    background-color: #FFBA9E;
+}
+
+.universities{
+    height: auto;
+    width: 100%; 
+    padding: 0 0 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.univ h3, h4{
+    color: #214061; 
+    padding: 0;
+    margin: 0.5rem 0;
+}
+
+.univ{
+    width: 30%;
+    height: 20rem;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.image{
+    max-width: 4rem;
+    display: flex;
+    align-items: center; 
+
+}
+
+.image img{
+    max-width: 100%; 
+}
+
+
+/****Technical Knowledge section style****/
+
+.pink{
+    color: #FFBA9E;
+}
+
+
+#techknow ul{
+    padding: 2rem;
+    margin: 0;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.knowledge{
+    border-top: 3px solid #bbb;
+    padding-top: 2rem;
+}
+
+#techknow li{
+    width: 30%;
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+    box-sizing: border-box;
+    border: 2px solid #FAEDE6;
+    border-radius: 15px;
+    background-color: #FFBA9E;
+    color: #214061;
+    font-size: 0.9rem;;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/****Others style****/
+.languages ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: #214061;
+}
+
+.languages .lan{
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+    font-size: 1.25rem;
+    color: black;
+}
+
+.languages li{
+    list-style: none;
+    padding: 0 2rem;
+}
+
+/****Competences style****/
+.competences ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 0;
+}
+
+.competences li{
+    list-style-type: none;
+    padding: 1rem;
+    width: 15%;
+}
+
+.competences .level{
+    width: 80%;
+    border: 2px solid #214061;
+    background-color: rgb(189, 191, 197);
+    display: flex;
+}
+
+.competences .comp{
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.level div{
+    border: 1px solid rgb(189, 191, 197);
+    width: 20%;
+    height: 1rem;
+}
+
+.competences .true{
+    background-color: #214061;
+}
+
+
+/****Hobbies section style****/
+.hobbies ul{
+    margin-top: 0;
+    margin: 0;
+    padding: 0 0 5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hobbies li{
+    padding: 0 1rem;
+    width: 20%;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+span.icon{
+    font-size: 2rem;
+    vertical-align: middle;
+    line-height: 2;
+}
+
+/****Footer style****/
+
+.contact{
+    background-color: #FFBA9E;
+    color: #214061;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+
+.contact div{
+    padding-left: 11rem;
+}
+
+.contact h4{
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', 'Times New Roman', serif;
+}
+
+.contact img{
+    width: 2rem;
+    vertical-align: middle;
+    line-height: 2;
+    padding-right: 0.75rem;
+}
+
+/* On screens that are 600px or less, set the background color to olive */
+@media screen and (max-width: 600px) {
+    .hero img{
+        height: 15rem;
+    }
+    
+    #aboutme p{
+        width: 80%;
+    }
+
+    #professional div{
+        margin: 0 10%;
+    }
+
+    .univ{
+        font-size: 0.8rem;
+    }
+
+    .image{
+        max-width: 4rem;
+    }
+
+    #techknow li{
+        width: 70%;
+        text-align: center;
+    }
+
+    .languages li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+    }   
+
+    .competences li{
+        width: 60%;
+    }
+
+    .contact div{
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        justify-content: center;
+    }
+
+    footer p{
+        width: 100%;
+        text-align: center;
+    }
+
+
+}
