@@ -1,6 +1,5 @@
 
 /****Global style****/
-
 html, body{
     margin: 0;
     padding: 0;
@@ -12,6 +11,7 @@ html, body{
     scroll-behavior: smooth;
 }
 
+/****Titles****/
 h1, h2, h3{
     margin: 0;
     font-weight: 500;
@@ -29,6 +29,7 @@ h4{
     font-family: 'Big Shoulders Stencil Display', Arial;
 }
 
+/****Hero section****/
 .hero {
     height: 600px;
     margin: 0;
@@ -61,21 +62,6 @@ h4{
     transition: background-size 0.25s ease-in;
     position: relative;
     animation: moving-h1 3s ease 1;
-}
-
-@keyframes moving-h1 {
-    from {left: 500px;}
-    to {left: 0px;}
-}
-
-@keyframes moving {
-    from {right: 300px;}
-    to {right: 0px;}
-}
-
-@keyframes grow {
-    from {height: 1rem;}
-    to {height: 15rem;}
 }
 
 .hero nav{
@@ -142,10 +128,6 @@ button{
     font-size: 1.4rem;
 }
 
-
-/****Hero section****/
-
-
 .hero .profilepic{
     grid-row-start: 3;
     grid-column-start: 1;
@@ -158,6 +140,23 @@ button{
     height: 15rem;
     position: relative;
     animation: grow 3s ease 1;
+}
+
+
+/****Animations and transitions****/
+@keyframes moving-h1 {
+    from {left: 500px;}
+    to {left: 0px;}
+}
+
+@keyframes moving {
+    from {right: 300px;}
+    to {right: 0px;}
+}
+
+@keyframes grow {
+    from {height: 1rem;}
+    to {height: 15rem;}
 }
 
 
@@ -221,7 +220,7 @@ button{
 .universities{
     height: auto;
     width: 100%; 
-    padding: 0 0 2rem 0;
+    padding: 0 0 1rem 0;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -236,7 +235,7 @@ button{
 .univ{
     width: 30%;
     height: 20rem;
-    padding: 1rem;
+    padding: 0;
     text-align: center;
     display: flex;
     flex-direction: column;
