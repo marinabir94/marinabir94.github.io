@@ -3,14 +3,17 @@
 html, body{
     margin: 0;
     padding:0;
+    width: 100vh;
     max-width: 100%;
     overflow-x: hidden;
+    
     height: 100%;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: rgb(39, 34, 36);
     background-color: #FAEDE6;
     scroll-behavior: smooth;
+    
 }
 
 /***Headings***/
@@ -38,16 +41,16 @@ h4{
     height: 600px;
     width: 100%;
     margin: 0;
-    padding: 100px;
+    /* padding-left: 100px; */
     font-family: 'Open Sans', sans-serif;
     color: #000;
     background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('./img/tech.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     align-items: center;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr); */
 }
 
 .hero h1{
@@ -66,6 +69,7 @@ h4{
     transition: background-size 0.25s ease-in;
     position: relative;
     animation: moving-h1 3s ease 1;
+    overflow-wrap: break-word;
 }
 
 .hero nav{
@@ -402,11 +406,11 @@ span.icon{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 .contact div{
-    padding-left: 11rem;
+    /* padding-left: 11rem; */
 }
 
 .contact h4{
@@ -418,11 +422,11 @@ span.icon{
     width: 2rem;
     vertical-align: middle;
     line-height: 2;
-    padding-right: 0.75rem;
+    /* padding-right: 0.75rem; */
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
     .html, body{
         font-size: 16px;
     }
@@ -476,6 +480,6 @@ span.icon{
         width: 100%;
         text-align: center;
     }
-
+*/
 
 }
