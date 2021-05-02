@@ -2,9 +2,10 @@
 /****Global style****/
 html, body{
     margin: 0;
-    padding: 0;
+    padding:0;
     max-width: 100%;
     overflow-x: hidden;
+    height: 100%;
     font-family: Roboto, Arial, Helvetica, sans-serif;
     font-size: 18px;
     color: rgb(39, 34, 36);
@@ -12,7 +13,8 @@ html, body{
     scroll-behavior: smooth;
 }
 
-/****Titles****/
+/***Headings***/
+
 h1, h2, h3{
     margin: 0;
     font-weight: 500;
@@ -30,14 +32,15 @@ h4{
     font-family: 'Big Shoulders Stencil Display', Arial;
 }
 
-/****Hero section****/
+/***Hero section***/
+
 .hero {
     height: 600px;
+    width: 100%;
     margin: 0;
     padding: 100px;
     font-family: 'Open Sans', sans-serif;
     color: #000;
-    background-repeat: repeat;
     background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65) ), url('./img/tech.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -113,7 +116,7 @@ button{
     padding: 0.5rem 0;
 }
 
- .hero ul a{
+.hero ul a{
     margin: 2rem;
     text-decoration: none;
     color: white; 
@@ -143,6 +146,22 @@ button{
     animation: grow 3s ease 1;
 }
 
+/***Hero section animation***/
+
+@keyframes moving-h1 {
+    from {left: 500px;}
+    to {left: 0px;}
+}
+
+@keyframes moving {
+    from {right: 300px;}
+    to {right: 0px;}
+}
+
+@keyframes grow {
+    from {height: 1rem;}
+    to {height: 15rem;}
+}
 
 /****Animations and transitions****/
 @keyframes moving-h1 {
@@ -181,8 +200,7 @@ button{
     justify-content: center;
 }
 
-
-/****Professional ¬ Technical Knowledge sections style****/
+/****Professional & Technical Knowledge sections style****/
 
 #professional, #techknow{
     height: auto;
@@ -194,7 +212,6 @@ button{
     display: flex;
     flex-direction: column;
 }
-
 
 #professional h4{
     margin-left: 45%;
@@ -209,8 +226,6 @@ button{
     line-height: 2rem;
     text-align: justify;
 }
-
-
 
 /****Education section style****/
 
@@ -256,13 +271,11 @@ button{
     max-width: 100%; 
 }
 
-
-/****Technical Knowledge section style****/
+/****Technical Knowledge section****/
 
 .pink{
     color: #FFBA9E;
 }
-
 
 #techknow ul{
     padding: 2rem;
@@ -294,7 +307,8 @@ button{
     justify-content: center;
 }
 
-/****Others style****/
+/****Others section****/
+
 .languages ul{
     display: flex;
     align-items: center;
@@ -314,7 +328,8 @@ button{
     padding: 0 2rem;
 }
 
-/****Competences style****/
+/****Competences style
+
 .competences ul{
     display: flex;
     align-items: center;
@@ -349,9 +364,10 @@ button{
 .competences .true{
     background-color: #214061;
 }
-
+*/
 
 /****Hobbies section style****/
+
 .hobbies ul{
     margin-top: 0;
     margin: 0;
@@ -377,7 +393,7 @@ span.icon{
     line-height: 2;
 }
 
-/****Footer style****/
+/****Footer section****/
 
 .contact{
     background-color: #FFBA9E;
@@ -406,7 +422,11 @@ span.icon{
 }
 
 /* On screens that are 600px or less, set the background color to olive */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+    .html, body{
+        font-size: 16px;
+    }
+    
     .hero img{
         height: 15rem;
     }
