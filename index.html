@@ -16,19 +16,19 @@
   <body>
 
     <div class="hero">
-      <h1>Hello there, this is Marina!</h1>
-      <div class="profilepic"><img src="resources/img/profile.png" alt="Profile picture"></div>
-      <nav class="topnav">
-        <div class ="dropdown"></div>
-          <button id="dropdown-button">Sections <i class="fas fa-angle-double-down more"></i></button>
-            <ul id='hidden' class="hidden-menu">
-              <li><a href="#aboutme">About me</a></li>
-              <li id="professional-link"><a href="#professional">Professional Experience</a></li>
-              <li><a href="#education">Education</a></li>
-              <li><a href="#techknow">Technical Knowledge</a></li>
-              <li><a href="#others">Others</a></li>
-            </ul> 
-      </nav>
+        <h1 class="animated">Hello there, this is Marina!</h1>
+        <div class="profilepic"><img src="resources/img/profile.png" alt="Profile picture" class="animated"></div>
+        <nav class="topnav animated">
+          <div class ="dropdown"></div>
+            <button id="dropdown-button">Sections <i class="fas fa-angle-double-down more"></i></button>
+              <ul id='hidden' class="hidden-menu">
+                <li><a href="#aboutme">About me</a></li>
+                <li id="professional-link"><a href="#professional">Professional Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#techknow">Technical Knowledge</a></li>
+                <li><a href="#others">Others</a></li>
+              </ul> 
+        </nav>
     </div>
 
     <main>
@@ -140,8 +140,18 @@
 
         <section id="techknow">
           <h1 class="pink">Technical Knowledge</h1>
-          <div class="knowledge">
-            <h3 class="pink">Robotics Process Automation</h3>
+          <div class="graph-desktop">
+            <img src="resources/img/techhow.png" alt="Representation of the technical skills">
+          </div>
+          <div class="graph-mobile">
+            <img src="resources/img/techhow_DK.png" alt="Development toolkit skills">
+            <img src="resources/img/techhow_FD.png" alt="Frontend development skills">
+            <img src="resources/img/techhow_RPA.png" alt="Robotic Process Automation skills">
+            <img src="resources/img/techhow_DS.png" alt="Data Science skills">
+          </div>
+          
+          <!-- <div class="knowledge">
+            <h3 class="pink expand">Robotics Process Automation</h3>
             <ul>
                 <li>UiPath (Official Advanced certification)</li>
                 <li>Blue Prism (Official AD01 certification)</li>
@@ -151,7 +161,7 @@
             </ul>
           </div>
           <div class="knowledge">
-            <h3 class="pink">Development Toolkit</h3>
+            <h3 class="pink expand">Development Toolkit</h3>
             <ul>
               <li>Agile Scrum development methodology</li>
               <li>Azure DevOps</li>
@@ -159,7 +169,7 @@
             </ul>
           </div>
           <div class="knowledge">
-            <h3 class="pink">Front-End Development</h3>
+            <h3 class="pink expand">Front-End Development</h3>
             <ul>
               <li>HTML5</li>
               <li>CSS3</li>
@@ -169,7 +179,7 @@
             </ul>
           </div>
           <div class="knowledge">
-            <h3 class="pink">Data Science</h3>
+            <h3 class="pink expand">Data Science</h3>
             <ul>
               <li>Data cleaning</li>
               <li>Data visualization</li>
@@ -178,7 +188,7 @@
                   StatsModels)
               </li>
             </ul>
-          </div>
+          </div> -->
         </section>
 
         <section id="others">
@@ -239,8 +249,9 @@
         </section>
 
       <section class='contact'>
+        <h4>Marina Ballester Ripoll</h4>  
         <div>
-        <h4>Marina Ballester Ripoll</h4>       
+     
           <p><img src="resources/img/iconfin_location.png">Barcelona, Spain</p>
           <p><img src="resources/img/icon_calendar.png">4th of November, 1994</p>
           <p><img src="resources/img/iconfin_mail.png">marinabir@yahoo.es</p>
@@ -250,7 +261,7 @@
       </section>
 
       <footer>
-        <p>Made with ♥ in Barcelona</p>
+        <p>Made with ❤️ in Barcelona</p>
       </footer>
 
     </main>
