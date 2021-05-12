@@ -499,7 +499,7 @@ span.icon{
     }
 
     #professional div{
-        margin: 0 10%;
+        margin: 0 5%;
         text-align:start;
     }
 
@@ -547,6 +547,10 @@ span.icon{
         width: 100%;
         justify-content: start;
         padding-left: 50%;
+    }
+
+    .hobbies .icon{
+        font-size: 1.5rem;
     }
 
     .competences li{
